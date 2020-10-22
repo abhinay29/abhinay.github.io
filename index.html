@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TaureanBox</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <section>
+      <h1 class="layer">Abhinay</h1>
+      <div class="textBox">
+          <h1 class="layer">Abhinay</h1>
+      </div>
+    </section>
+    <script type="text/javascript">
+      document.addEventListener('mousemove', parallax);
+      function parallax(e){
+        this.querySelectorAll('.layer').forEach(layer => {
+          let x = (window.innerWidth - e.pageX * 10) / 100;
+          let y = (window.innerWidth - e.pageY * 10) / 100;
+          layer.style.transform = `translate(${x}px,${y}px)`;
+        });
+      }
+    </script>
+  </body>
+</html>
