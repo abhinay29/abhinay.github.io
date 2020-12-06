@@ -88,7 +88,7 @@ a:hover, a:active{
 }
 
 .social-home a:hover, .social-home a:active, .contact-home a:hover, .contact-home a:active{
-  color: brown;
+  color: #7f402f;
 }
 
 .info-home .social-home a:last-child{
@@ -226,12 +226,13 @@ a:hover, a:active{
 
 .navigation-home a{
   color: #ffffff;
-  padding: 10px 25px;
+  padding: 0 25px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
+  line-height: 75px;
 }
 
 .navigation-home a:hover{
-  color: brown;
+  background-color: #7f402f;
 }
