@@ -162,7 +162,7 @@ a:hover, a:active{
   -ms-flex-align: center;
   align-items: center;
   z-index: 4;
-  border-left: 1px dashed hsla(0,0%,100%,.5);
+  border-left: 1px dashed rgba(255, 255, 255, 0.6);
   height: 100%;
   top: 0;
   right: 0;
