@@ -222,6 +222,8 @@ a:hover, a:active{
   display: flex;
   align-items: center;
   background: #175d3c;
+  position: sticky;
+  top: 0;
 }
 
 .navigation-home ul{
