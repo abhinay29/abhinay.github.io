@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Malshej Camping</title><link rel="preconnect" href="https://fonts.gstatic.com">
+
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/line.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" href="assets/css/styles.css?v=1.6">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="assets/css/styles.css?v=1.7">
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -20,7 +25,7 @@
         <div class="col-lg-4">
           <div class="logo-home">
             <div class="logo-icons">
-              <img src="" alt="">
+              <!-- <img src="" alt=""> -->
             </div>
             <a href="#">
               <img src="assets/images/malshej.png" alt="Malshej">
@@ -47,25 +52,53 @@
           <div class="home-slider-container">
             <div class="slides">
               <div>
+                <div class="overlay"></div>
                 <img src="assets/images/sliders/slide1.jpeg" alt="">
+                <div class="slider-text">
+                  <h1 class="cap1">Malshej Lake Camping</h1>
+                </div>
               </div>
               <div>
+                <div class="overlay"></div>
                 <img src="assets/images/sliders/slide2.jpeg" alt="">
+                <div class="slider-text">
+                  <h1 class="cap1">A Memorable Adventure</h1>
+                </div>
               </div>
               <div>
+                <div class="overlay"></div>
                 <img src="assets/images/sliders/slide3.jpeg" alt="">
+                <div class="slider-text">
+                  <h1 class="cap1">Away From Crowds and Pollution</h1>
+                </div>
               </div>
               <div>
+                <div class="overlay"></div>
                 <img src="assets/images/sliders/slide4.jpeg" alt="">
+                <div class="slider-text">
+                  <h1 class="cap1">Discover a Beautiful Destination</h1>
+                </div>
               </div>
               <div>
+                <div class="overlay"></div>
                 <img src="assets/images/sliders/slide5.jpeg" alt="">
+                <div class="slider-text">
+                  <h1 class="cap1">Make Week End Memorable at Malshej Lake Camping</h1>
+                </div>
               </div>
               <div>
+                <div class="overlay"></div>
                 <img src="assets/images/sliders/slide6.jpeg" alt="">
+                <div class="slider-text">
+                  <h1 class="cap1">Inducing The Spirit of Adventure</h1>
+                </div>
               </div>
               <div>
+                <div class="overlay"></div>
                 <img src="assets/images/sliders/slide7.jpeg" alt="">
+                <div class="slider-text">
+                  <h1 class="cap1">Inculcating a Love or Nature</h1>
+                </div>
               </div>
             </div>
             <div class="slick-carousel-navigation-container">
@@ -128,6 +161,19 @@
       appendDots: ".slick-carousel-navigation",
       appendArrows: ".slick-carousel-navigation",
     });
+
+    $(".slides").on("beforeChange", function() {
+      $('.cap1').removeClass('animate__animated animate__fadeInUp').hide();
+      setTimeout(() => {
+        $('.cap1').addClass('animate__animated animate__fadeInUp').show();
+      }, 1000);
+
+    });
+
   </script>
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <!-- <script>
+    AOS.init();
+  </script> -->
 </body>
 </html>
