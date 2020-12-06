@@ -1,0 +1,231 @@
+:root{
+  --bg-primary: #175d3c;
+  --bg-seconday: #ffffff;
+  --color-primary: #666666;
+  --color-seconday: #175d3c;
+}
+
+*, ::after, ::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--bg-seconday);
+  color: var(--color-primary);
+  line-height: 1.5;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+}
+
+[role=button], a, area, button, input, label, select, summary, textarea {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+a{
+  text-decoration: none;
+}
+a:hover, a:active{
+  color: var(--color-seconday);
+}
+
+.header-home{
+  height: 90vh;
+}
+
+.header-home .row{
+  margin-right: 0;
+  margin-left: 0;
+  height: 100%;
+}
+
+.header-home .row>*{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.logo-home{
+  height: 70%;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-home img{
+  height: 150px;
+}
+
+.info-home{
+  height: 30%;
+  background-color: #b8d09c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-home .contact-home{
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #175d3c33;
+  text-align: center;
+}
+
+.info-home .contact-home a{
+  display: block;
+  color: var(--color-seconday);
+}
+
+.info-home .social-home a{
+  color: var(--color-seconday);
+  font-size: 1.7rem;
+  padding: 0 15px;
+  border-right: 1px solid #175d3c33;
+}
+
+.social-home a:hover, .social-home a:active, .contact-home a:hover, .contact-home a:active{
+  color: brown;
+}
+
+.info-home .social-home a:last-child{
+  border-right: 0;
+}
+
+.home-slider-container{
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides{
+  width: 100%;
+  height: 100%;
+}
+
+.slides img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.slick-vertical .slick-slide{
+  border: 0;
+  outline: none;
+}
+
+.slick-carousel-navigation-container{
+  position: absolute;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 4;
+  border-left: 1px dashed hsla(0,0%,100%,.5);
+  height: 100%;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.slick-carousel-navigation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  width: 3.3333333333rem;
+}
+
+.slick-carousel-navigation .slick-dots {
+  padding-left: 0;
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  margin-bottom: 0;
+  margin-right: .5555555556rem;
+}
+
+.slick-carousel-navigation .slick-dots li {
+  display: inline-block;
+  background-color: hsla(0,0%,100%,.5);
+  border-radius: .1111111111rem;
+  width: .4444444444rem;
+  height: .4444444444rem;
+  margin-right: .5555555556rem;
+  cursor: pointer;
+}
+
+.slick-carousel-navigation .slick-dots li.slick-active, .slick-carousel-navigation .slick-dots li:hover {
+  background-color: hsla(0,0%,100%,.9);
+}
+
+.slick-carousel-navigation .slick-dots li button {
+  display: none;
+}
+
+.slick-carousel-navigation .slick-arrow {
+  position: relative;
+  z-index: 4;
+  background-color: transparent;
+  color: hsla(0,0%,100%,.5);
+  border: 0;
+  outline: none;
+  bottom: 0;
+  padding: 0;
+  cursor: pointer;  
+  order: 2;
+}
+.slick-carousel-navigation .slick-arrow img{
+  width: 30px;
+  margin: 0 5px;
+}
+
+.screen-reader-text, .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.navigation-home{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  background: #175d3c;
+}
+
+.navigation-home a{
+  color: #ffffff;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navigation-home a:hover{
+  color: brown;
+}

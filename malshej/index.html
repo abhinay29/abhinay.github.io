@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malshej Camping</title><link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/line.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <header>
+    <div class="header-home">
+      <div class="row">
+        <!-- home left -->
+        <div class="col-lg-4">
+          <div class="logo-home">
+            <a href="#">
+              <img src="assets/images/malshej.png" alt="Malshej">
+            </a>
+          </div>
+          <div class="info-home">
+            <div class="contact-home">
+              <a href="mailto:#">info@example.com</a>
+              <a href="tel:#">+91 999 999 0000</a>
+            </div>
+            <div class="social-home">
+              <a href="#"><i class="uil uil-facebook-f"></i></a>
+              <a href="#"><i class="uil uil-instagram"></i></a>
+              <a href="#"><i class="uil uil-twitter"></i></a>
+              <a href="#"><i class="uil uil-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- home left -->
+
+        <!-- home right -->
+        <div class="col-lg-8">
+
+          <div class="home-slider-container">
+            <div class="slides">
+              <div>
+                <img src="assets/images/sliders/slide1.jpeg" alt="">
+              </div>
+              <div>
+                <img src="assets/images/sliders/slide2.jpeg" alt="">
+              </div>
+              <div>
+                <img src="assets/images/sliders/slide3.jpeg" alt="">
+              </div>
+              <div>
+                <img src="assets/images/sliders/slide4.jpeg" alt="">
+              </div>
+              <div>
+                <img src="assets/images/sliders/slide5.jpeg" alt="">
+              </div>
+              <div>
+                <img src="assets/images/sliders/slide6.jpeg" alt="">
+              </div>
+              <div>
+                <img src="assets/images/sliders/slide7.jpeg" alt="">
+              </div>
+            </div>
+            <div class="slick-carousel-navigation-container">
+              <div class="slick-carousel-navigation">
+
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <!-- home right -->
+      </div>
+    </div>
+  </header>
+  
+  <div class="navigation-home">
+    <div class="container">
+      <nav class="text-center">
+        <a href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Package</a>
+        <a href="">Gallery</a>
+        <a href="">Contact Us</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- data-slick="{"autoplay":true,"autoplaySpeed":5000,"fade":false,"dots":true,"arrows":true,"adaptiveHeight":false,"speed":600,"prevArrow":"<button type=\"button\" class=\"slick-prev  slick-arrow\"><span class=\"screen-reader-text\">Previous<\/span><i class=\"fa fa-long-arrow-left\" aria-hidden=\"true\"><\/i><\/button>","nextArrow":"<button type=\"button\" class=\"slick-next  slick-arrow\"><span class=\"screen-reader-text\">Next<\/span><i class=\"fa fa-long-arrow-right\" aria-hidden=\"true\"><\/i><\/button>","appendArrows":".js-pt-slick-carousel-navigation","appendDots":".js-pt-slick-carousel-navigation","vertical":true,"responsive":[{"breakpoint":992,"settings":{"dots":false,"vertical":false,"appendArrows":".js-pt-slick-carousel-initialize-slides"}}]}" -->
+
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $('.slides').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      fade: false,
+      dots: true,
+      arrows: true,
+      adaptiveHeight: false,
+      speed: 600,             
+      vertical: true,
+      verticalSwiping: true,
+      hoverPause: false,
+      prevArrow: "<button type=\"button\" class=\"slick-prev slick-arrow\"><span class=\"screen-reader-text\">Previous<\/span><img src=\"assets\/images\/arrow-left.svg\" \/><\/button>",
+      nextArrow: "<button type=\"button\" class=\"slick-next slick-arrow\"><span class=\"screen-reader-text\">Next<\/span><img src=\"assets\/images\/arrow-right.svg\" \/><\/button>",
+      appendDots: ".slick-carousel-navigation",
+      appendArrows: ".slick-carousel-navigation",
+    });
+  </script>
+</body>
+</html>
