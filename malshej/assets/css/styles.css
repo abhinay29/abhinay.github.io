@@ -195,10 +195,15 @@ a:hover, a:active{
   padding: 0;
   cursor: pointer;  
   order: 2;
+  opacity: .6;
 }
 .slick-carousel-navigation .slick-arrow img{
   width: 30px;
   margin: 0 5px;
+}
+
+.slick-carousel-navigation .slick-arrow:hover{
+  opacity: 1;
 }
 
 .screen-reader-text, .sr-only {
