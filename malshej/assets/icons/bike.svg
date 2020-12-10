@@ -1,52 +1,130 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<g>
-	<g>
-		<g>
-			<path d="M330.667,122.667c23.467,0,42.667-19.2,42.667-42.667s-19.2-42.667-42.667-42.667S288,56.533,288,80
-				S307.2,122.667,330.667,122.667z"/>
-			<path d="M106.667,261.333C48,261.333,0,309.333,0,368s48,106.667,106.667,106.667c58.667,0,106.667-48,106.667-106.667
-				S165.333,261.333,106.667,261.333z M106.667,442.667C65.067,442.667,32,409.6,32,368s33.067-74.667,74.667-74.667
-				c41.6,0,74.667,33.067,74.667,74.667S148.267,442.667,106.667,442.667z"/>
-			<path d="M404.267,238.933v-42.667c-32,0-58.667-11.733-77.867-30.933L284.8,124.8c-6.4-7.467-17.067-12.8-28.8-12.8
-				s-22.4,4.267-29.867,12.8l-58.667,58.667c-7.467,7.467-12.8,18.133-12.8,29.867s5.333,22.4,12.8,30.933l67.2,59.733v106.667
-				h42.667V277.333L230.4,230.4l50.133-51.2l16,16C323.2,222.933,360.533,238.933,404.267,238.933z"/>
-			<path d="M405.333,261.333c-58.667,0-106.667,48-106.667,106.667s48,106.667,106.667,106.667C464,474.667,512,426.667,512,368
-				S464,261.333,405.333,261.333z M405.333,442.667c-41.6,0-74.667-33.067-74.667-74.667s33.067-74.667,74.667-74.667
-				C446.933,293.333,480,326.4,480,368S446.933,442.667,405.333,442.667z"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="bike.svg"
+   xml:space="preserve"
+   style="enable-background:new 0 0 512 512;"
+   viewBox="0 0 512 512"
+   y="0px"
+   x="0px"
+   id="Capa_1"
+   version="1.1"><metadata
+   id="metadata51"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs49" /><sodipodi:namedview
+   inkscape:current-layer="Capa_1"
+   inkscape:window-maximized="1"
+   inkscape:window-y="41"
+   inkscape:window-x="-9"
+   inkscape:cy="256"
+   inkscape:cx="256"
+   inkscape:zoom="1.4013219"
+   showgrid="false"
+   id="namedview47"
+   inkscape:window-height="1001"
+   inkscape:window-width="1920"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0"
+   guidetolerance="10"
+   gridtolerance="10"
+   objecttolerance="10"
+   borderopacity="1"
+   bordercolor="#666666"
+   pagecolor="#ffffff" />
+<g
+   style="fill:#175d3c;fill-opacity:1"
+   id="g14">
+	<g
+   style="fill:#175d3c;fill-opacity:1"
+   id="g12">
+		<g
+   style="fill:#175d3c;fill-opacity:1"
+   id="g10">
+			<path
+   style="fill:#175d3c;fill-opacity:1"
+   id="path2"
+   d="M330.667,122.667c23.467,0,42.667-19.2,42.667-42.667s-19.2-42.667-42.667-42.667S288,56.533,288,80     S307.2,122.667,330.667,122.667z" />
+			<path
+   style="fill:#175d3c;fill-opacity:1"
+   id="path4"
+   d="M106.667,261.333C48,261.333,0,309.333,0,368s48,106.667,106.667,106.667c58.667,0,106.667-48,106.667-106.667     S165.333,261.333,106.667,261.333z M106.667,442.667C65.067,442.667,32,409.6,32,368s33.067-74.667,74.667-74.667     c41.6,0,74.667,33.067,74.667,74.667S148.267,442.667,106.667,442.667z" />
+			<path
+   style="fill:#175d3c;fill-opacity:1"
+   id="path6"
+   d="M404.267,238.933v-42.667c-32,0-58.667-11.733-77.867-30.933L284.8,124.8c-6.4-7.467-17.067-12.8-28.8-12.8     s-22.4,4.267-29.867,12.8l-58.667,58.667c-7.467,7.467-12.8,18.133-12.8,29.867s5.333,22.4,12.8,30.933l67.2,59.733v106.667     h42.667V277.333L230.4,230.4l50.133-51.2l16,16C323.2,222.933,360.533,238.933,404.267,238.933z" />
+			<path
+   style="fill:#175d3c;fill-opacity:1"
+   id="path8"
+   d="M405.333,261.333c-58.667,0-106.667,48-106.667,106.667s48,106.667,106.667,106.667C464,474.667,512,426.667,512,368     S464,261.333,405.333,261.333z M405.333,442.667c-41.6,0-74.667-33.067-74.667-74.667s33.067-74.667,74.667-74.667     C446.933,293.333,480,326.4,480,368S446.933,442.667,405.333,442.667z" />
 		</g>
 	</g>
 </g>
-<g>
+<g
+   style="fill:#175d3c;fill-opacity:1"
+   id="g16">
 </g>
-<g>
+<g
+   style="fill:#175d3c;fill-opacity:1"
+   id="g18">
 </g>
-<g>
+<g
+   style="fill:#175d3c;fill-opacity:1"
+   id="g20">
 </g>
-<g>
+<g
+   style="fill:#175d3c;fill-opacity:1"
+   id="g22">
 </g>
-<g>
+<g
+   style="fill:#175d3c;fill-opacity:1"
+   id="g24">
 </g>
-<g>
+<g
+   style="fill:#175d3c;fill-opacity:1"
+   id="g26">
 </g>
-<g>
+<g
+   style="fill:#175d3c;fill-opacity:1"
+   id="g28">
 </g>
-<g>
+<g
+   style="fill:#175d3c;fill-opacity:1"
+   id="g30">
 </g>
-<g>
+<g
+   style="fill:#175d3c;fill-opacity:1"
+   id="g32">
 </g>
-<g>
+<g
+   style="fill:#175d3c;fill-opacity:1"
+   id="g34">
 </g>
-<g>
+<g
+   style="fill:#175d3c;fill-opacity:1"
+   id="g36">
 </g>
-<g>
+<g
+   style="fill:#175d3c;fill-opacity:1"
+   id="g38">
 </g>
-<g>
+<g
+   style="fill:#175d3c;fill-opacity:1"
+   id="g40">
 </g>
-<g>
+<g
+   style="fill:#175d3c;fill-opacity:1"
+   id="g42">
 </g>
-<g>
+<g
+   style="fill:#175d3c;fill-opacity:1"
+   id="g44">
 </g>
 </svg>
