@@ -271,28 +271,29 @@
    <script>
     var Form = $('#enq_form');
     Form.submit(function(e){
-      $('#submit-btn').attr('disabled', 'disabled');
-      var formData = 'do=enq_form&' + Form.serialize();
-      $.ajax({
-        url: 'ajax.php',
-        type: 'POST',
-        data: formData,
-        dataType: 'json',
-        success: function(rv){
-          if(rv.msg == 'ok'){
-            $('#return-msg').html('<div class="alert alert-success alert-dismissible fade show" role="alert"">Submitted successfully. <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
-            Form.trigger('reset');
-            $('#submit-btn').removeAttr('disabled');
-          }else{
-            $('#return-msg').html('<div class="alert alert-danger alert-dismissible fade show" role="alert"">Something went wrong, try again later. <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
-            $('#submit-btn').removeAttr('disabled');
-          }
-        },
-        error: function(){
-          $('#return-msg').html('<div class="alert alert-danger alert-dismissible fade show" role="alert"">Something went wrong, try again later. <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
-            $('#submit-btn').removeAttr('disabled');
-        }
-      });
+      $('#return-msg').html('<div class="alert alert-danger alert-dismissible fade show" role="alert"">Not Allowed in demo mode. <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+      // $('#submit-btn').attr('disabled', 'disabled');
+      // var formData = 'do=enq_form&' + Form.serialize();
+      // $.ajax({
+      //   url: 'ajax.php',
+      //   type: 'POST',
+      //   data: formData,
+      //   dataType: 'json',
+      //   success: function(rv){
+      //     if(rv.msg == 'ok'){
+      //       $('#return-msg').html('<div class="alert alert-success alert-dismissible fade show" role="alert"">Submitted successfully. <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+      //       Form.trigger('reset');
+      //       $('#submit-btn').removeAttr('disabled');
+      //     }else{
+      //       $('#return-msg').html('<div class="alert alert-danger alert-dismissible fade show" role="alert"">Something went wrong, try again later. <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+      //       $('#submit-btn').removeAttr('disabled');
+      //     }
+      //   },
+      //   error: function(){
+      //     $('#return-msg').html('<div class="alert alert-danger alert-dismissible fade show" role="alert"">Something went wrong, try again later. <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+      //       $('#submit-btn').removeAttr('disabled');
+      //   }
+      // });
       e.preventDefault();
     });
   </script>
