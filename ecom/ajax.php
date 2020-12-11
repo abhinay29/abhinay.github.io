@@ -19,8 +19,7 @@
         $data = [
           'name'      =>  $_POST['name'],
           'email'     =>  $_POST['email'],
-          'phone'     =>  $_POST['phone'],
-          'message'  =>  $_POST['message']
+          'phone'     =>  $_POST['phone']
         ];
           
         $sendEmail = $clsMail->sendEnquiryForm($data);

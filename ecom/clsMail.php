@@ -15,7 +15,7 @@ function phpmailer($email, $subject, $body){
   $smtp_user = 'napster@tb.net';
   $smtp_pass = '1989';
   $smtp_port = '25';
-  $smtp_sender = 'Example Sender';
+  $smtp_sender = 'Ecom Seller Booster';
 
 
   // Production
@@ -74,20 +74,19 @@ class clsMail {
 
       global $adminEmail;
 
-      $subject = "Enquiry from {$data['name']}";
+      $subject = "[Alert] Contact info recieved.";
       
       $body = "Hello Admin,<br>
-      <p>Enquiry form details are following.</p>      
+      <p>Contact form information are following.</p>      
       <table style='width: 400px;'>
         <tr><td style='width: 30%;'><strong>Name</strong></td><td>{$data['name']}</td></tr>
         <tr><td><strong>Email</strong></td><td>{$data['email']}</td></tr>
         <tr><td><strong>Phone</strong></td><td>{$data['phone']}</td></tr>
-        <tr><td><strong>Message</strong></td><td>{$data['message']}</td></tr>
       </table>
       <br><br>
       Regards, <br>
-      Name
-      Company Name
+      Webmaster <br>
+      Ecom Seller Booster
       ";
 
       $sendMail = phpmailer($adminEmail, $subject, $body);

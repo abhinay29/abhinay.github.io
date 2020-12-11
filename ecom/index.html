@@ -218,8 +218,8 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="p-4 mb-4 shadow-sm rounded-3 bg-blue">
-            <form id="contact-form">
+          <div class="p-4 pb-2 mb-4 shadow-sm rounded-3 bg-blue">
+            <form id="enq_form" method="post">
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" name="name" id="name" placeholder="Your Full Name" required>
@@ -230,11 +230,12 @@
               </div>
               <div class="mb-3">
                 <label for="phone" class="form-label">Phone No.</label>
-                <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Contact No." max-length="10" required>
+                <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Contact No." maxlength="10" onkeyup="this.value=this.value.replace(/[^\d]/,'')" required>
               </div>
               <div>
-                <button type="button" class="btn btn-danger">Send Message</button>
+                <button type="submit" id="submit-btn" class="btn btn-danger">Submit</button>
               </div>
+              <div id="return-msg" class="mt-3"></div>
             </form>
           </div>
         </div>
@@ -265,6 +266,40 @@
       prevArrow: "<button type=\"button\" class=\"slick-prev slick-arrow btn btn-lg btn-outline-danger\"><i class=\"uil uil-angle-left-b\"><\/i><\/button>",
       nextArrow: "<button type=\"button\" class=\"slick-next slick-arrow btn btn-lg btn-outline-danger\"><i class=\"uil uil-angle-right-b\"><\/i><\/button>",
       appendArrows: ".slick-navigation-container"
+    });
+  </script>
+   <script>
+    
+    var Form = $('#enq_form');
+
+    Form.submit(function(e){
+
+      // Disable submit button so form can not submit multiple times.
+      $('#submit-btn').attr('disabled', 'disabled');
+
+      // Collect form data & generate post data for ajax.php.
+      var formData = 'do=enq_form&' + Form.serialize();
+
+      //Submit form and return message.
+      $.ajax({
+        url: 'ajax.php',
+        type: 'POST',
+        data: formData,
+        dataType: 'json',
+        success: function(rv){
+          if(rv.msg == 'ok'){
+            $('#return-msg').html('<div class="alert alert-success alert-dismissible fade show" role="alert"">Submitted successfully. <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+            Form.trigger('reset');
+            $('#submit-btn').removeAttr('disabled');
+          }else{
+            $('#return-msg').html('<div class="alert alert-danger alert-dismissible fade show" role="alert"">Something went wrong, try again later. <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+            $('#submit-btn').removeAttr('disabled');
+          }
+        }
+      });
+
+      e.preventDefault();
+
     });
   </script>
 </body>
