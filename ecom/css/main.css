@@ -10,6 +10,7 @@ body{
 
 .bg-blue{
   background-color: var(--dark-blue);
+  color: var(--color-light);
 }
 
 .navbar-brand, .navbar{
@@ -76,11 +77,6 @@ body{
   font-size: 4rem;
 }
 
-.bg-blue{
-  background-color: var(--dark-blue);
-  color: var(--color-light);
-}
-
 .section-wrap{
   padding: 40px;
 }
@@ -134,6 +130,14 @@ body{
 .services .item h3{
   font-size: 1.4rem;
   margin-top: 20px;
+}
+
+.bg-team{
+  background-image: url('../images/4TBSG2Oqu0Q.jpg');  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 
