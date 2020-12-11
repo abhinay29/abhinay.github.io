@@ -112,6 +112,31 @@ body{
   text-align: justify;
 }
 
+.services{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services .item{
+  width: 300px;
+  border: 1px solid var(--bs-red);
+  border-radius: 10px;
+  padding: 40px 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.services .item img{
+  width: 50px;
+}
+
+.services .item h3{
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+
+
 @media (max-width: 768px){
   .home_slider{
     overflow: hidden;
