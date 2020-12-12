@@ -3,6 +3,11 @@
   --color-light: #f6f6f9;
 }
 
+body, html{
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body{
   color: var(--dark-blue);
   background-color: #f6f6f9 !important;
