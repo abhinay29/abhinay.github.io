@@ -323,6 +323,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+.services:hover .service-img{
+  -webkit-animation: bounceimg 2s ease-in-out 0s infinite alternate;
+  animation: bounceimg 2s ease-in-out 0s infinite alternate;
+}
+
 .section-3{
   display: flex;
   width: 1024px;
@@ -579,4 +584,127 @@ footer .nav-link:hover{
   .back-to-top-btn a:hover{
     opacity: 1;
   }
+}
+
+.bounceimg{
+  -webkit-animation: bounceimg 2s ease-in-out 0s infinite alternate;
+  animation: bounceimg 2s ease-in-out 0s infinite alternate;
+}
+
+@-webkit-keyframes bounceimg {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes bounceimg {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+.logo-icons{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-icons .icon_1, .logo-icons .icon_2, .logo-icons .icon_3, .logo-icons .icon_4{
+  position: absolute;
+  opacity: .3;
+  height: 70px;
+  width: 70px;
+  filter: grayscale(100%);
+}
+
+.logo-icons .icon_1{
+  top: 10px;
+  left: 20px;
+}
+
+.logo-icons .icon_2{
+  top: 15px;
+  right:15px;
+}
+
+.logo-icons .icon_3{
+  bottom: 10px;
+  left: 10px;
+}
+
+.logo-icons .icon_4{
+  bottom: 15px;
+  right: 15px;
+}
+
+.shape1, .shape2, .shape3, .shape4, .shape5, .shape6, .shape7, .shape8, .shape9, .shape10{
+  position: absolute;
+  opacity: .3;
+  filter: grayscale(100%);
+}
+
+.shape1{
+  top: 10px;
+  left: 50px;
+  width: 150px;
+}
+
+.shape2{
+  width: 180px;
+  top: -40px;
+  right: 40px;
+  animation-delay: .7s;
+}
+
+.shape3{
+  width: 160px;
+  bottom: 40px;
+  left: 40px;
+  animation-delay: .4s;
+}
+
+.shape4 {
+  width: 160px;
+  top: 25%;
+  right: 40px;
+  animation-delay: .6s;
+}
+
+.shape5 {
+  width: 160px;
+  bottom: 20%;
+  left: 40px;
+  animation-delay: .8s;
+}
+
+.shape6 {
+  width: 140px;
+  top: 40px;
+  right: 10%;
+  animation-delay: .3s;
+}
+
+.shape7 {
+  width: 160px;
+  bottom: 40px;
+  left: 30px;
+  animation-delay: .5s;
 }
