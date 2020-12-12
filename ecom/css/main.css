@@ -140,6 +140,10 @@ body{
   background-attachment: fixed;
 }
 
+.directors-card{
+  max-width: 300px;
+}
+
 
 @media (max-width: 768px){
   .home_slider{
@@ -168,5 +172,8 @@ body{
   }
   .col-order-2{
     order: 2;
+  }
+  .directors-card{
+    max-width: 100%;
   }
 }
