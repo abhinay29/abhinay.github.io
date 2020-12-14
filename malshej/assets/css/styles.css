@@ -331,8 +331,8 @@ h1, h2, h3, h4, h5, h6 {
 .section-3{
   display: flex;
   width: 1024px;
-  margin: auto auto 60px;
-  /* border: 1px solid #b8d09c; */
+  margin: 60px auto;
+  background-color: #fff;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
@@ -627,11 +627,11 @@ footer .nav-link:hover{
   height: 100%;
 }
 
-.logo-icons .icon_1, .logo-icons .icon_2, .logo-icons .icon_3, .logo-icons .icon_4{
+.logo-icons .icon_1, .logo-icons .icon_2, .logo-icons .icon_3, .logo-icons .icon_4, .logo-icons .icon_5, .logo-icons .icon_6, .logo-icons .icon_7, .logo-icons .icon_8{
   position: absolute;
   opacity: .3;
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
   filter: grayscale(100%);
 }
 
@@ -655,55 +655,117 @@ footer .nav-link:hover{
   right: 15px;
 }
 
-.shape1, .shape2, .shape3, .shape4, .shape5, .shape6, .shape7, .shape8, .shape9, .shape10{
+.logo-icons .icon_5{
+  top: 15px;
+  left: 45%;
+}
+
+.logo-icons .icon_6{
+  bottom: 15px;
+  left: 45%;
+}
+
+.logo-icons .icon_7{
+  top: 45%;
+  left: 10px;
+}
+
+.logo-icons .icon_8{
+  top: 45%;
+  right: 15px;
+}
+
+.shape1, .shape2, .shape3, .shape4, .shape5, .shape6, .shape7, .shape8, .shape9, .shape10, .shape11, .shape12{
   position: absolute;
   opacity: .3;
   filter: grayscale(100%);
+  width: 75px;
 }
 
 .shape1{
   top: 10px;
   left: 50px;
-  width: 150px;
 }
 
 .shape2{
-  width: 180px;
-  top: -40px;
-  right: 40px;
-  animation-delay: .7s;
+  top: 20%;
+  right: 80px;
+  animation-delay: .4s;
 }
 
 .shape3{
-  width: 160px;
-  bottom: 40px;
+  bottom: 10%;
   left: 40px;
   animation-delay: .4s;
 }
 
 .shape4 {
-  width: 160px;
-  top: 25%;
+  bottom: 0%;
   right: 40px;
-  animation-delay: .6s;
+  animation-delay: .8s;
 }
 
 .shape5 {
-  width: 160px;
-  bottom: 20%;
-  left: 40px;
+  bottom: 20px;
+  left: 60px;
   animation-delay: .8s;
 }
 
 .shape6 {
-  width: 140px;
   top: 40px;
   right: 10%;
   animation-delay: .3s;
 }
 
 .shape7 {
-  width: 160px;
+  top: 40px;
+  left: 60px;
+  animation-delay: .6s;
+}
+
+.shape8 {
+  top: 30%;
+  right: 30px;
+  animation-delay: .5s;
+}
+
+.shape9 {
+  top: 20px;
+  left: 15%;
+  animation-delay: .25s;
+}
+
+.shape10 {
+  top: 50%;
+  left: 40px;
+  animation-delay: .5s;
+}
+
+.shape11 {
+  top: 50%;
+  right: 20px;
+  animation-delay: .7s;
+}
+
+.shape12 {
+  bottom: 0;
+  right: 60px;
+  animation-delay: .3s;
+}
+
+.shape13 {
+  bottom: 40px;
+  left: 30px;
+  animation-delay: .5s;
+}
+
+.shape14 {
+  bottom: 40px;
+  left: 30px;
+  animation-delay: .5s;
+}
+
+.shape15 {
   bottom: 40px;
   left: 30px;
   animation-delay: .5s;
