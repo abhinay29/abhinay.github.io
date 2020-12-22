@@ -1,6 +1,7 @@
 :root{
   --bg-primary: #175d3c;
   --bg-seconday: #ffffff;
+  --bg-lightyellow: #FFFDE7;
   --color-primary: #333333;
   --color-seconday: #175d3c;
 }
@@ -104,6 +105,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 90vh;
   width: 100%;
   overflow: hidden;
+  z-index: 10;
 }
 
 .slides{
@@ -290,6 +292,118 @@ h1, h2, h3, h4, h5, h6 {
 
 .navigation-home a:hover{
   opacity: 1;
+}
+
+.header{
+  width: 100%;
+  display: flex;
+}
+
+.header .logo {
+  width: 200px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-lightyellow);
+}
+
+.header .logo a{
+  text-align: center;
+}
+
+.header .logo img{
+  width: 60%;
+}
+
+.header .menu{
+  flex: 1 1 0;
+}
+
+.header .contact_info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  height: 90px;
+}
+
+.header .page_title h1{
+  line-height: 90px;
+}
+
+.navigation {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  background: var(--bg-primary);
+  top: 0;
+  z-index: 10;
+  flex: 1 1 0;
+}
+
+.navigation ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.navigation li{
+  border-right: 1px dashed #ffffff26;
+}
+
+.navigation li:last-child{
+  border: 0;
+}
+
+.navigation li a{
+  color: #ffffff;
+  padding: 5px 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  opacity: .7;
+}
+
+.navigation a:hover{
+  opacity: 1;
+}
+
+.contact_info{
+  background-color: #b8d09c;
+  display: flex;
+  align-items: center;
+}
+
+.contact_info .top_contact{
+  display: flex;
+  text-align: center;
+}
+
+.contact_info .top_contact a{
+  padding: 0 20px;
+  color: var(--color-seconday);
+  border-right: 1px solid #175d3c33;
+}
+
+.contact_info .top_contact a:last-child{
+  border-right: 0;
+}
+
+.contact_info .top_social a{
+  color: var(--color-seconday);
+  font-size: 1.7rem;
+  padding: 0 15px;
+  border-right: 1px solid #175d3c33;
+}
+
+.top_social a:hover, .top_social a:active, .top_contact a:hover, .top_contact a:active{
+  color: #7f402f;
+}
+
+.contact_info .top_social a:last-child{
+  border-right: 0;
 }
 
 .section-header{
@@ -769,4 +883,49 @@ footer .nav-link:hover{
   bottom: 40px;
   left: 30px;
   animation-delay: .5s;
+}
+
+.chat-with-us {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  text-align: center;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.chat-with-us h2{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.chat-with-us img{
+  width: 40px;
+}
+
+.bookNowBtn{
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  text-align: center;
+  transition: all .3s ease;
+  z-index: 2;
+}
+
+.bookNowBtn button{
+  padding: 10px 40px;
+  outline: none;
+  box-shadow: none;
+}
+
+.bookNowBtn button:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+.bookNowBtn:hover{
+  transform: translateY(-10px);
 }
