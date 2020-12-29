@@ -74,10 +74,10 @@ class clsMail {
 
       global $adminEmail;
 
-      $subject = "Enquiry from {$data['name']}";
+      $subject = "Booking Enquiry from {$data['name']}";
       
       $body = "Hello Admin,<br>
-      <p>Enquiry form details are following.</p>      
+      <p>Book now enquiry details are following.</p>      
       <table style='width: 400px;'>
         <tr><td style='width: 30%;'><strong>Name</strong></td><td>{$data['name']}</td></tr>
         <tr><td><strong>Email</strong></td><td>{$data['email']}</td></tr>
@@ -86,8 +86,34 @@ class clsMail {
       </table>
       <br><br>
       Regards, <br>
-      Name
-      Company Name
+      WebMaster
+      Malshej Lake Camping
+      ";
+
+      $sendMail = phpmailer($adminEmail, $subject, $body);
+
+      return $sendMail;
+
+    }
+
+    function contactForm($data = array()){
+
+      global $adminEmail;
+
+      $subject = "{$data['name']} want to contact.";
+      
+      $body = "Hello Admin,<br>
+      <p>Contact form details from contact page are following.</p>      
+      <table style='width: 400px;'>
+        <tr><td style='width: 30%;'><strong>Name</strong></td><td>{$data['name']}</td></tr>
+        <tr><td><strong>Email</strong></td><td>{$data['email']}</td></tr>
+        <tr><td><strong>Phone</strong></td><td>{$data['phone']}</td></tr>
+        <tr><td><strong>Message</strong></td><td>{$data['message']}</td></tr>
+      </table>
+      <br><br>
+      Regards, <br>
+      WebMaster
+      Malshej Lake Camping
       ";
 
       $sendMail = phpmailer($adminEmail, $subject, $body);
