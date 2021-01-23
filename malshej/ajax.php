@@ -16,26 +16,28 @@
     
     case 'enq_form':
 
-        if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['phone'])){
-          $retVal['msg'] = 'empty';
-          echo json_encode($retVal);
-          die();
-        }
+        $retVal['msg'] = 'ok';
 
-        $data = [
-          'name'      =>  $_POST['name'],
-          'email'     =>  $_POST['email'],
-          'phone'     =>  $_POST['phone'],
-          'message'  =>  $_POST['message']
-        ];
+        // if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['phone'])){
+        //   $retVal['msg'] = 'empty';
+        //   echo json_encode($retVal);
+        //   die();
+        // }
+
+        // $data = [
+        //   'name'      =>  $_POST['name'],
+        //   'email'     =>  $_POST['email'],
+        //   'phone'     =>  $_POST['phone'],
+        //   'message'  =>  $_POST['message']
+        // ];
           
-        $sendEmail = $clsMail->sendEnquiryForm($data);
+        // $sendEmail = $clsMail->sendEnquiryForm($data);
 
-        if($sendEmail){
-          $retVal['msg'] = 'ok';
-        }else{
-          $retVal['msg'] = 'err';
-        }
+        // if($sendEmail){
+        //   $retVal['msg'] = 'ok';
+        // }else{
+        //   $retVal['msg'] = 'err';
+        // }
       
     break;
 

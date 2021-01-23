@@ -1034,6 +1034,18 @@ footer .nav-link:hover{
   transform: scale(1.2);
 }
 
+.track-lg{
+  display: block;
+}
+.track-lg img{
+  width: 100%;
+  max-width: 1200px;
+}
+
+.track-sm{
+  display: none;
+}
+
 @media (max-width: 768px){
   body{
     margin-bottom: 120px;
@@ -1234,6 +1246,16 @@ footer .nav-link:hover{
     padding: 15px;
     background-color: var(--bg-primary);
     margin: 15px;
+  }
+  .track-sm{
+    display: block;
+  }
+  .track-sm img{
+    width: 100%;
+  }
+  
+  .track-lg{
+    display: none;
   }
 
 }
