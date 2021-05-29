@@ -12,13 +12,14 @@
   <link rel="stylesheet" href="style.css">
 
 </head>
-<body class="primary">
-
-
+<body>
+  <div class="bg-1"></div>
+  <div class="bg-2"></div>
   <div class="container">
     <h1 class="hero-title">Our Pricing</h1>
     <div class="toggle-button-section">
       <span class="p-name">Annually</span>
+      <!-- <input type="checkbox" id="checkbox" onclick="togglePrice()" checked=""> -->
       <div class="onoffswitch">
         <input type="checkbox" class="onoffswitch-checkbox" id="checkbox" onclick="togglePrice()" checked="">
         <label class="onoffswitch-label" for="checkbox">
@@ -68,6 +69,9 @@
   </div>
 
   <footer>
+    <div class="footer-text">
+      <span>Press 'T' on keyboard to toggle pricing</span>
+    </div>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://taureanbox.com/" target="_blank">Abhinay Sharma</a>.
@@ -75,11 +79,22 @@
   </footer>
 
   <script>
+    var checkbox = document.getElementById("checkbox");
+    var monthly = document.querySelectorAll(".monthly");
+    var annually = document.querySelectorAll(".annually");
+
+    document.onkeydown = (keyDownEvent) => {
+      if (keyDownEvent.key == 't') {
+        togglePrice()
+        if (checkbox.checked) {
+          checkbox.checked = false;
+        } else {
+          checkbox.checked = true;
+        }
+      }
+    }
 
     function togglePrice() {
-      var checkbox = document.getElementById("checkbox");
-      var monthly = document.querySelectorAll(".monthly");
-      var annually = document.querySelectorAll(".annually");
       for (var i = 0; i < monthly.length; i++) {
         monthly[i].classList.toggle("hide");
         annually[i].classList.toggle("hide");
