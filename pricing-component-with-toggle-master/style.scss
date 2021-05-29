@@ -200,6 +200,7 @@ body {
 .bg-primary .btn {
   background: #fff;
   color: hsl(237, 63%, 64%);
+  font-size: 80%;
   &:hover {
     background: transparent;
     color: #fff;
@@ -219,10 +220,17 @@ footer {
   width: 100%;
   text-align: center;
   padding: 15px 0;
+  display: flex;
+  justify-content: space-around;
+
+  .footer-text {
+    span {
+      font-size: 11px;
+    }
+  }
 
   .attribution {
     font-size: 11px;
-    text-align: center;
   }
 
   .attribution a {
@@ -240,14 +248,24 @@ footer {
     .card {
       width: 100%;
       margin-bottom: 30px;
+      padding: 30px 25px;
 
       &.bg-primary {
         width: 100%;
         transform: scale(1);
+        padding: 30px 25px;
+        .btn {
+          font-size: 90%;
+        }
       }
       &:last-child {
         margin-bottom: 0;
       }
+    }
+  }
+  footer {
+    .footer-text {
+      display: none;
     }
   }
 }
