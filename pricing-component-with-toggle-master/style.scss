@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+:root {
+  --very-light-gray-blue: hsl(240, 78%, 98%);
+  --light-gray-blue: hsl(234, 14%, 74%);
+  --gray-blue: hsl(233, 13%, 49%);
+  --dark-gray-blue: hsl(232, 13%, 33%);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--very-light-gray-blue);
+  color: var(--dark-gray-blue);
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 2;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.hero-title {
+  text-align: center;
+  color: var(--gray-blue);
+  margin-bottom: 20px;
+}
+
+.toggle-button-section {
+  display: flex;
+  margin: 15px 0 30px;
+  justify-content: center;
+  align-items: center;
+
+  .p-name {
+    margin: 0 20px;
+    color: var(--light-gray-blue);
+  }
+}
+
+// Color
+
+.bg-primary {
+  background: linear-gradient(150deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%) 50%);
+  color: #fff;
+}
+
+// Color
+
+.onoffswitch {
+  position: relative;
+  width: 55px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.onoffswitch-checkbox {
+  display: none;
+}
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0;
+  border-radius: 20px;
+  margin-bottom: 0;
+}
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.2s ease-in 0s;
+}
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 31px;
+  padding: 0;
+  // line-height: 26px;
+  box-sizing: border-box;
+}
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+  content: "";
+  background: hsl(237, 63%, 64%);
+}
+
+.onoffswitch-switch {
+  display: block;
+  width: 23px;
+  height: 23px;
+  margin: 4px !important;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 24px;
+  border-radius: 20px;
+  transition: all 0.2s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+
+.pricing-component {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+
+  .card {
+    width: 300px;
+    text-align: center;
+    padding: 30px 25px 30px 35px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 30px 0px hsla(237, 63%, 64%, 0.15);
+
+    &:first-child {
+      padding: 30px 35px 30px 25px;
+    }
+
+    &.bg-primary {
+      width: 280px;
+      box-shadow: none;
+      transform: scale(1.1);
+      font-size: 90%;
+      padding: 40px 25px 30px;
+    }
+
+    .monthly,
+    .annually {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    .dollar {
+      font-size: 2rem;
+      margin-right: 5px;
+    }
+
+    p {
+      border-bottom: 1px solid var(--light-gray-blue);
+      padding: 10px;
+    }
+    p:first-child {
+      border-top: 1px solid var(--light-gray-blue);
+    }
+    p:last-child {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.btn {
+  background: linear-gradient(300deg, hsl(237, 63%, 64%) 0%, hsl(236, 72%, 79%) 100%);
+  color: #fff;
+  outline: none;
+  border: 0;
+  width: 100%;
+  padding: 12px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background: transparent;
+    color: var(--gray-blue);
+    border: 1px solid var(--gray-blue);
+  }
+}
+
+.bg-primary .btn {
+  background: #fff;
+  color: hsl(237, 63%, 64%);
+  &:hover {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-top: 60px;
+  }
+  .pricing-component {
+    flex-direction: column;
+    padding: 30px;
+    .card {
+      width: 100%;
+      margin-bottom: 30px;
+
+      &.bg-primary {
+        width: 100%;
+        transform: scale(1);
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
